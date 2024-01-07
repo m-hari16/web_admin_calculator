@@ -11,8 +11,8 @@ class GrafikRepository
     $http = Http::withHeaders([
       'apiKey' => config('app.apkiKey')
     ])->get(
-      config('app.base_url') . 'api/report/access-log-user'
-    )->object();
+      config('app.base_url') . 'api/report/raccess-log-user'
+    )->json();
 
     return $http;
   }
